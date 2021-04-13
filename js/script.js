@@ -53,23 +53,32 @@ var studenti = [
 // 4. ciclare su tutti gli Studenti (CICLO CON FOR)
 for (var i = 0; i < studenti.length; i++){
     var student = studenti[i];
+    
 
     console.log(student);
-
+    console.log('posizione ' + (i +1));
     // ciclo con for-in 
     for(var key in student){
-        
     }
+   //for(var j = 0; j < studenti[i]; i++){
+       //console.log('Studente ' + studenti[i][j]);
+  // }
     console.log("Nome e cognome: " , student['nome'],  student['cognome']);
 } 
 
 // 5.Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere
 // un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
-var  newStudent = { 
-    'nome' : prompt('Inserisci il nome'),
-    'cognome' : prompt('Inserisci il cognome'),
-    'eta' : prompt('Inserisci la tua età'),
+// 1 prompt
+var  newStuNome = prompt('inserisci il nome');
+var  newStuCog = prompt('inserisci il cognome');
+var  newStuEta = prompt('inserisci l eta');
+// 2 creare oggetto proprietà : valore (che ti passa l'utente)
+
+var newStudent = {
+    'nome': newStuNome,
+    'cognome' : newStuCog,
+    'eta' : newStuEta,
     
 };
-console.log(newStudent);
-//studenti.push(newStudent);
+studenti.push(newStudent);
+console.log(studenti);
