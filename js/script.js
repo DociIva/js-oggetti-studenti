@@ -4,7 +4,7 @@
  *  nome, cognome e età.
  *  Stampare a schermo attraverso un ciclo for-in tutte 
  * le proprietà dell'oggetto.
- Creare un array di oggetti di studenti. Ciclare su tutti gli studenti
+ punto 2 . Creare un array di oggetti di studenti. Ciclare su tutti gli studenti
   e stampare per ognuno di essi, nome e cognome.
  Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere
   un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età. 
@@ -49,14 +49,14 @@ var studenti = [
     } 
 ];
 //console.log(studenti);
-
+ //studenti.push(newUtent);
 // 4. ciclare su tutti gli Studenti (CICLO CON FOR)
 for (var i = 0; i < studenti.length; i++){
     var student = studenti[i];
 
     console.log(student);
 
-    // ciclo con for in 
+    // ciclo con for-in 
     for(var key in student){
         
     }
@@ -65,3 +65,11 @@ for (var i = 0; i < studenti.length; i++){
 
 // 5.Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere
 // un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
+var  newStudent = { 
+    'nome' : prompt('Inserisci il nome'),
+    'cognome' : prompt('Inserisci il cognome'),
+    'eta' : prompt('Inserisci la tua età'),
+    
+};
+console.log(newStudent);
+//studenti.push(newStudent);
