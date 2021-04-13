@@ -16,11 +16,38 @@
 var studente = {
     'nome'  : 'Iva',
     'cognome' : 'Doci',
-    'eta' : '25',
+    'eta' : 25,
 };
 //console.log(studente.nome);
 
-// 2. stampa tutti gli elementi con ciclo for-in
+// 2. stampa tutti gli elementi con CICLO FOR-IN
 for(var key in studente) {
     console.log(studente[key]);
 }
+
+// 3. creare un array di oggetti di studenti 
+var studenti = [
+    {
+        'nome' : 'Chiara',
+        'cognome' : 'Rossi',
+        'eta' : 21,
+    }, // <-- ricorda la virgola qua 
+    {
+        'nome' : 'Sara',
+        'cognome' : 'Verdi',
+        'eta' : 27,
+    },
+    {
+        'nome' : 'Chiara',
+        'cognome' : 'Pippo',
+        'eta' : 33,
+    },
+    {
+        'nome' : 'Chiara',
+        'cognome' : 'Pluto',
+        'eta' : 41,
+    } 
+];
+console.log(studenti);
+
+// 4. ciclare su tutti gli Studenti
